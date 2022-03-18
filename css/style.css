@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Andada|Permanent+Marker|Raleway:300');
+
+body{
+    background-repeat: no-repeat;
+    background-size: auto;
+    font-family:'Roboto';
+}
+
+.hidden{
+    display: none;
+}
+
+.centerWrapper{
+    display: grid;
+    place-items: center;
+    min-height: 40vh;
+}
+
+#mainContainer, #contentsContainer{
+    max-width: 70%;
+    min-width: 40%;
+    margin-top: 10vh;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.65);
+    color: white;
+}
+
+#contentsContainer input{
+  width: 98%;
+}
+
+#quote{
+  font-style: italic;
+  margin-bottom: 2vh;
+}
+.button-10 {
+    
+  
+    align-items: center;
+    padding: 6px 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+    border-radius: 6px;
+    border: none;
+  
+    color: #fff;
+    background: linear-gradient(180deg, #4B91F7 0%, #367AF6 100%);
+     background-origin: border-box;
+    box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-10:focus {
+    box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+    outline: 0;
+  }
+  .group        { 
+    position:relative; 
+    margin-bottom:45px; 
+    overflow: hidden;
+  }
+
+  #prettyInput         {
+    
+    padding:10px 10px 10px 5px;
+    background-color: transparent;
+    border:none;
+    border-bottom:1px solid #757575;
+    color: white;
+  }
+  #prettyInput:focus     { outline:none; }
+  
+  /* LABEL ======================================= */
+  label          {
+    color:#999; 
+    font-size:18px;
+    font-weight:normal;
+    position:absolute;
+    pointer-events:none;
+    left:5px;
+    top:10px;
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+
+  }
+  
+  /* active state */
+  #prettyInput:focus ~ label, #prettyInput:valid ~ label    {
+    top:-3px;
+    font-size:10px;
+    color:#999; 
+  }
+  
+  
+  /* active state */
+  #prettyInput:focus ~ .bar:before, #prettyInput:focus ~ .bar:after {
+    width:50%;
+  }
+  
+  /* HIGHLIGHTER ================================== */
+  .highlight {
+    position:absolute;
+    height:60%; 
+    width:100px; 
+    top:25%; 
+    left:0;
+    pointer-events:none;
+    opacity:0.5;
+  }
+  
+  /* active state */
+  #prettyInput:focus ~ .highlight {
+    -webkit-animation:inputHighlighter 0.3s ease;
+    -moz-animation:inputHighlighter 0.3s ease;
+    animation:inputHighlighter 0.3s ease;
+  }
+  
+  /* ANIMATIONS ================ */
+  @-webkit-keyframes inputHighlighter {
+    from { background:#5264AE; }
+    to  { width:0; background:transparent; }
+  }
+  @-moz-keyframes inputHighlighter {
+    from { background:#5264AE; }
+    to  { width:0; background:transparent; }
+  }
+  @keyframes inputHighlighter {
+    from { background:#5264AE; }
+    to  { width:0; background:transparent; }
+  }
