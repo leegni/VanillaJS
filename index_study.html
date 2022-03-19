@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>VanillaJS</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css"/>
+  </head>
+  <body>
+    
+ 
+    <div class="centerWrapper">  
+
+      <div id="mainContainer">    
+
+      <h2 id="clock">00:00:00</h2>
+      <div id="weather">
+        <span></span>
+        <span></span>
+      </div>
+      <form class="hidden" id="login-form">
+        <div class="group">      
+          <input id="prettyInput" type="text" required>
+          <span class="highlight"></span>
+          <label>What is your name?</label>
+          <input type="submit" value="Sign In" class="button-10"/>
+        </div>
+      </form>
+      
+      <h1 class="hidden" id="greeting">
+      </h1>
+
+      <div id="quote">
+        <span></span>
+        <br/>
+        <span></span>
+      </div>
+    </div>
+
+    <div id="contentsContainer">   
+      <form id="todo-form">
+        <div class="group">
+      <input type="text" id="prettyInput" required/>
+      <span class="highlight"></span>
+      <label>Write a To do and Press Enter!</label>
+    </div>
+    </form>
+    <ul id="todo-list">
+    </ul>
+  </div>
+ 
+
+  </div>
+  
+
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+  </body>
+</html>
