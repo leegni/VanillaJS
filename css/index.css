@@ -94,6 +94,9 @@ html {
     display: grid;
     grid-template-columns: 50% 50%;
 }
+li span{
+    overflow-x: auto;
+}
 .button-10 {
     align-items: center;
     border-radius: 6px;
