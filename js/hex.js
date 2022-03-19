@@ -257,7 +257,12 @@ const hexCodes = [
     ];
 
     const body = document.querySelector("body");
+    
+function setBackground(){
     const firstColor = hexCodes[Math.floor(Math.random() * hexCodes.length)];
     const secondColor = hexCodes[Math.floor(Math.random() * hexCodes.length)];
-
     body.style.backgroundImage = `radial-gradient(${firstColor}, ${secondColor})`;
+}
+    
+setBackground();
+setInterval(setBackground, 5000);
